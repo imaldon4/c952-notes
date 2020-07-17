@@ -1,0 +1,23 @@
+Prologue
+    entry_label:
+    addi $sp, $sp, -framesize
+    sw $ra, framesize - 4 ($sp)
+    save otehr regs if need be
+
+    BODY (call other functions)
+
+Epilogue
+    restore other regs if need be
+    lw $ra, framesize - 4 ($sp)
+    addi $sp, $sp, framesize
+    jr $ra
+
+
+
+Where is the Stack in Memory?
+    High memory and grows down
+    MIPS programs (text segment) in low end
+    Static data segment 
+        -initialzed before program starts running
+        -$gp points to Static
+        
