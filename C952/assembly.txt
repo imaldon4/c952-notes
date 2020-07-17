@@ -1,0 +1,13 @@
+6 Steps to Calling a Function
+******************************
+    1) Parameters to access
+    2) Transfer control to Function
+    3) Acquire local storage
+    4) Peform task
+    5) Put result / return value
+    6) Transfer control back
+
+Argument registers:     $a0-$a3
+Value registers:        $v0-$v1
+return address:         $ra
+
