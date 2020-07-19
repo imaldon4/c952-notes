@@ -24,5 +24,8 @@ Instruction decode
         -how many registers need to read
 
 ALU
-    
+    real work done here
+    - shifting, arithmetic, logic, comparisons
+    - loads and stores (add needed to get to circuitry)
+
 
