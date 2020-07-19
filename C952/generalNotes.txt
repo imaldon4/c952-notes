@@ -28,3 +28,6 @@ Three timing parameters for flip-flop
 
 Maximum Clock Frequency
 Max Delay = CLK-to-Q Delay + CL Delay + Setup Time
+
+Pipelining to improve performance
+- in parallel
