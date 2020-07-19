@@ -5,3 +5,13 @@ Hardware Design
 - Upsurge of hardware Design
 - Companies -> specializing in chips, and need hardware designers 
 
+Basics:
+
+Synchronous:
+    - guided by a clock
+        orchestrates all behavior
+Digital:
+    - represent values by discrete values
+    - ONLY binary
+
+Switches
