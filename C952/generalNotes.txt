@@ -1,20 +1,13 @@
-Step 1: Analyze instruction set 
-Step 2: Select set of datapath components
+Instructions setting values on Datapath
+******************************
+ExtOp: zero, sign
+Memwr: 1 => write memory
+ALUsrc: 0=> regB;
+    1 => immed
+MemtoReg: 0 => ALU; 1 => mem
+ALUctr: "ADD", "SUB", "OR"
+    log base 2 of number of supported operations
+RegDst: 0 => "rt"; 1 => "rd"
+RegWr: 1 => write register
 
 
-Register-register timing:
-    one complete cycle (add/sub)
-
-
-Logical Operation (or) with immediate
-
-
-
-Control signals: 0 or 1
-    RegDst
-    RegWr
-    ExtOp
-    ALUctr
-    ALUSrc
-    MemtoReg
-    MemWr
