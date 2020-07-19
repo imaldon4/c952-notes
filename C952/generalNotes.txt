@@ -41,3 +41,47 @@ Object File Format
     - debugging information
 ELF (executable linker format)
 
+linker
+****************************** 
+    - brings in standard libraries
+    Input => Object code files 
+    Output => executable code (a.out)
+    - incremental compilation
+        just need to compile that one file, not everything
+    - takes text.o, data.o, file.o and resolves them into a single a.out file (executable)
+
+Four Types of Addresses
+******************************
+PC-Relative addressing (beq, bne)
+    never relocate
+
+Absolute Addresses in MIPS
+******************************
+J-format:
+j/jal | xxxxx
+
+Load and store
+lw/sw | $gp | $x | address 
+
+conditional branches
+beq/bne | $rs | $rs | address
+
+
+Resolving references 
+******************************
+Linker assumes first text segment is address 0x04000000
+Linker knows
+    - length of text and data segment
+    - ordering of text and data segments
+Linker calculates
+    - absolute address of each label to be jumped to
+
+To resolve references
+Output => executable file 
+
+
+Loader Basics
+******************************
+Input   => executable code 
+Output  => program is run
+
