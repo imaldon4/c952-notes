@@ -4,4 +4,62 @@ step 1: analyze instruction set
 step 2: select set of datapath components and establish clock methodology
 step 3: assemble datapath components that meet requirements
 
-58min
+Register Transfer Language 
+    - what register is updated with which value?
+
+{op, rs, rt, rd, shamt, funct} <-- MEM[PC]
+{op, rs, rt, Imm16} <-- MEM[PC]
+
+ADDU    R[rd] <-- R[rs] + R[rt]; // PC <-- PC + 4
+
+Step 1:
+requirements of the instruction set
+    memory
+    registers
+        read rs 
+        read rt 
+        write rt or rd
+    program counter
+    extender sign/zero extender
+    add/sub/or etc
+    add 4 (+maybe extended immediate) to PC
+
+components of the Datapth
+    combinational Elements
+    storage elements + clocking methodology
+    building blocks
+
+ALU needs for MIPS-lite + rest of MIPS
+
+Addition, subtraction, logical OR, ==:
+    ADDU    r[RD] = r[RS] + R[rt];
+    SUBU
+    ORI
+    BEQ
+
+Storage Element: idealized memory
+    'magic' memory
+        one input bus: data in
+        one output bus: data output
+    reads are treated as combinational
+
+Write enable signal
+    - tells if its reading or writing at the moment
+
+clock signal    
+    - only used during writes 
+
+read
+    combinational =    Address valid => Data out valid after "access time"
+
+Register (building block)
+    Similar to D flip flop except
+        n-bit input and output
+
+Register file
+    holds the MIPS state
+    - two 32 bit output busses
+    - can read two values at the same time
+
+Step 3a: Instruction Fetch Unit
+
