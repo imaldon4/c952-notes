@@ -15,3 +15,4 @@ Assembly step 2
 Symbol table
 
 Relocation information
+
