@@ -4,3 +4,4 @@ step 1: analyze instruction set
 step 2: select set of datapath components and establish clock methodology
 step 3: assemble datapath components that meet requirements
 
+58min
