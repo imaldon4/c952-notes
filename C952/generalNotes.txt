@@ -1,39 +1,28 @@
-Synchronous Digital Systems
-******************************
-Hardware Design
-- End of Moore's law, you want to be able to understand the next generation of Hardware.
-- Upsurge of hardware Design
-- Companies -> specializing in chips, and need hardware designers 
+Combinational Logic (CL) circuits
 
-Basics:
-
-Synchronous:
-    - guided by a clock
-        orchestrates all behavior
-Digital:
-    - represent values by discrete values
-    - ONLY binary
-
-Switches
-
-Complementary Metal Oxide Semiconductor
-CMOS transistors
-    - On if control terminal is a 1
-
-Three terminals:
--source
--gate
--drain
-
-n-channel transistor 
-    - gate closed with voltage
-    - 1 = connected
-    - 0 = disconnected
-
-p-channel transistor
-    - gate opened with voltage (NOT)
-    - 1 = disconnected
-    - 0 = connected 
+Sequential Logic (SL)
+    - can be used to store values
 
 
+Accumulator Example:
+Control flow of information:
 
+x1 --/--> SUM --/--> s 
+
+
+adder
+    x.in
+    register
+register
+    x.out
+
+
+Registers hold the input stable
+
+
+Three timing parameters for flip-flop
+    - window of time when input not changing 
+        set up time
+        hold time 
+        clk-to-q delay
+        
