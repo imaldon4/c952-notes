@@ -1,2 +1,19 @@
-Subtractor
-15min
+Components of a Computer
+******************************
+Processor (memory){
+    Control,
+    Datapath {
+        PC,
+        Registers,
+        ALU
+    }
+}
+
+Memory (processor, input (I/O)) {
+    Bytes {
+        Program, 
+        Data 
+    }
+    return Output
+}
+
