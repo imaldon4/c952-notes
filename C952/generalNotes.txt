@@ -1,22 +1,33 @@
-Corrected Datapath for Load
+Pipelining Hazards
 ******************************
-Keep track of what was that instruction
-Use local version of instruction paired with result instruction
+Hazards 
+    prevents starting an instruction immediately in next cycle
 
-Keep control bit as you go down pipeline.
-
-
-IF | ID | EX | Mem | WB
-
-implements
-IF => instruciton memory
-ID => register file
-EX => ALU
-Mem => memory
-WB => data memory
+3 categories:
+    structural Hazards
+        two instructions fighting over same hardware
+    
+    data hazard 
+        one instruction needs instruction that previous one hasn't produced yet
+    
+    control hazard 
+        branch instruction doesn't let know what next instruction is
 
 
-Pipelining performance
-******************************
-T >= T_single_cycle / Number_of_stages
+Structual hazards
+    conflict of resource
+    - if only had a single memory?
+        problem if load/store while instruction fetch (use memory at same time)
+            STALL must occur
+    - easiest to solve:
+        throw more hardware. Can always remove or add more hardware.
+    - solutions
+        1) split regfile into two
+        2) build regfile with independent read and write ports
+Conclusion: Read and Write to registers during same clock cycle is okay
+All about hardware
 
+
+Data Hazards
+    a value in previous instruction is needed to continue
+    
