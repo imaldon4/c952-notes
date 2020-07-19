@@ -1,9 +1,2 @@
-Finite State Machines
-******************************
-FSM combinational Logic
-Learn at: 57min
-
-Data Multiplexer (MUX)
-******************************
-    two inputs
-    select says which one of the inputs you want appearing in the output
+Subtractor
+15min
