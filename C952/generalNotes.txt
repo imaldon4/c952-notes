@@ -18,4 +18,16 @@ Pipeline rate limited by slowest pipeline stage
 Unbalanced pipeline 
     - creates limits on the slowest pipeline
     - breaking up assembly line evenly
-    
+
+
+Pipeline registers
+******************************
+The registers break the flow of signals
+
+Need registers between stages
+    to hold info produced in previous cycle 
+
+Keep the register you need to write to until the end of the pipeline,
+then when you get to the end, it will write to the correct register
+without overwriting anything else.
+
