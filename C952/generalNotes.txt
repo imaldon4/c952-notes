@@ -85,3 +85,9 @@ Loader Basics
 Input   => executable code 
 Output  => program is run
 
+What does it do?
+    - reads executable header
+    - create new address space
+    - init stack
+    - init machine register
+    - jump to start of 'main' routine
