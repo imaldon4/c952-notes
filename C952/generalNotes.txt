@@ -15,3 +15,25 @@ Digital:
     - ONLY binary
 
 Switches
+
+Complementary Metal Oxide Semiconductor
+CMOS transistors
+    - On if control terminal is a 1
+
+Three terminals:
+-source
+-gate
+-drain
+
+n-channel transistor 
+    - gate closed with voltage
+    - 1 = connected
+    - 0 = disconnected
+
+p-channel transistor
+    - gate opened with voltage (NOT)
+    - 1 = disconnected
+    - 0 = connected 
+
+
+
