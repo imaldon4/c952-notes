@@ -1,22 +1,6 @@
-Stages of Execution on Datapath
+Processor design (5 steps)
 ******************************
+step 1: analyze instruction set 
+step 2: select set of datapath components and establish clock methodology
+step 3: assemble datapath components that meet requirements
 
-Stage 1) Instruction Fetch
-    update PC at clock edge
-    take value in program counter and sent to instruciton memory
-    new values will change and go to memory
-    increment program counter by 4
-
-Stage 2) Decode / Register read
-    reading out two operands you might need
-
-Stage 3) Execute
-    ALU being fed immediate and register information
-
-Stage 4) memory
-    memory is going to produce value at that memory location
-    store => store data value 
-        need to read base address, data value, immediate
-    
-Stage 5) register write
-    being written to register file
