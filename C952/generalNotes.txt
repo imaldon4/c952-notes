@@ -91,3 +91,21 @@ What does it do?
     - init stack
     - init machine register
     - jump to start of 'main' routine
+
+
+Example: C => Asm => Obj => Exe => Run
+
+Compiler
+    - Takes C code and produces assembly code 
+    
+Compilation:MAL
+    __.text
+    .align 2 (all instructions need to be aligned on a 4 byte boundary)
+    .globl main 
+
+
+Assembly step 2
+******************************
+Symbol table
+
+Relocation information
