@@ -4,3 +4,38 @@ Simple case
     - arithmetic, logical, shifts
 Branch
     - PC-relative
+
+"Forward Reference"
+    - 2 passes usually in assembly Language
+
+Jumps and Jump and Link (j and jal)
+    Require absolute address
+        But don't know where you are going to jump to.
+    These need absolute address because they are farther and can't
+    be guessed.
+    Dont' know where jumping to, so need an absolute address.
+
+Static Data
+    Don't know that actual 32 bit address until later.
+    
+Do as much as you can in machine code.
+
+Symbol Table
+******************************
+    List of "items"
+
+Relocation Table  
+    - items
+    - labels jumped to (j or jal)
+        internal
+        external (lib files too)
+    - any piece of static section (la instruction)
+
+Object File Format
+******************************
+    - object file header
+    - text segment
+    - data segment
+    - relocation information
+    - symbol table 
+    - debugging information
