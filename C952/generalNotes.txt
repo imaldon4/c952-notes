@@ -25,4 +25,6 @@ Three timing parameters for flip-flop
         set up time
         hold time 
         clk-to-q delay
-        
+
+Maximum Clock Frequency
+Max Delay = CLK-to-Q Delay + CL Delay + Setup Time
