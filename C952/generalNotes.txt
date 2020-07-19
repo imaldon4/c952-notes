@@ -14,3 +14,10 @@ Five statges of Instruction execution
 Instruction Fetch 
     32-bit instruction fetched from cache-memory hierarchy
     increment PC (PC = PC + 4) pointing to next instruction
+
+Instruction decode
+    is it an add, sub, jump?
+    gather rdata from fields
+    - first read opcode
+    - second figure out needed registers
+
