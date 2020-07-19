@@ -28,4 +28,15 @@ ALU
     - shifting, arithmetic, logic, comparisons
     - loads and stores (add needed to get to circuitry)
 
+Memory access
+    read values from caches and return to processors
+
+Register write
+    result is written to a destination register 
+    happens at end of execution
+    - arithmetic, logical, shifts, loads, slt
+    - stores, branches, jumps?
+        store doesn't do anything during this phase, because it has done its work during previous stage 
+
+
 
