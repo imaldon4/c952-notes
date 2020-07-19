@@ -1,33 +1,4 @@
-Combinational Logic (CL) circuits
-
-Sequential Logic (SL)
-    - can be used to store values
-
-
-Accumulator Example:
-Control flow of information:
-
-x1 --/--> SUM --/--> s 
-
-
-adder
-    x.in
-    register
-register
-    x.out
-
-
-Registers hold the input stable
-
-
-Three timing parameters for flip-flop
-    - window of time when input not changing 
-        set up time
-        hold time 
-        clk-to-q delay
-
-Maximum Clock Frequency
-Max Delay = CLK-to-Q Delay + CL Delay + Setup Time
-
-Pipelining to improve performance
-- in parallel
+Finite State Machines
+******************************
+FSM combinational Logic
+Learn at: 57min
