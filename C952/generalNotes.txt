@@ -20,4 +20,9 @@ Instruction decode
     gather rdata from fields
     - first read opcode
     - second figure out needed registers
+        -which registers   
+        -how many registers need to read
+
+ALU
+    
 
