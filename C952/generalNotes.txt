@@ -1,19 +1,16 @@
-Components of a Computer
+The CPU
 ******************************
-Processor (memory){
-    Control,
-    Datapath {
-        PC,
-        Registers,
-        ALU
-    }
-}
+Processor (CPU)
+    - datapath (wide words and storage)
+    - control (tells it what to do)
 
-Memory (processor, input (I/O)) {
-    Bytes {
-        Program, 
-        Data 
-    }
-    return Output
-}
+Five statges of Instruction execution
+    1 instruction fetch
+    2 instruction decode
+    3 ALU
+    4 memory access
+    5 register write
 
+Instruction Fetch 
+    32-bit instruction fetched from cache-memory hierarchy
+    increment PC (PC = PC + 4) pointing to next instruction
