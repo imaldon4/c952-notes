@@ -28,3 +28,16 @@ Consequence #1: => Everything Addressed
     -Program Counter (PC) => pointer to memory instruction 
         (Intel name: Instruction Pointer)
     
+x86 is old and complex
+    - Intel old
+    - variable length instructions
+MIPs Instruction set 
+MIPs is newer and less complicated
+    - ALL instructions = 32 bits
+
+Fields (MIPS)
+    - Operands (Add, etc)
+    - Operations
+
+Types: r i j
+i format - immediates
