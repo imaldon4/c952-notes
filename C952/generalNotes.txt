@@ -1,33 +1,17 @@
-Pipelining
+Corrected Datapath for Load
 ******************************
+Keep track of what was that instruction
+Use local version of instruction paired with result instruction
 
-Clock rate is CYCLES / SECONDS which is in Hz and is 1/period
-
-Pipelining 
-    - doesn't help latency of a single task
-    - throughput is improved 
-
-What is the biggest speedup you can do?
-    - depends on number of stages
-    - takes time for pipe to fill up
-
-Peak speed of 4 loads = factor of *4
-
-Pipeline rate limited by slowest pipeline stage
-
-Unbalanced pipeline 
-    - creates limits on the slowest pipeline
-    - breaking up assembly line evenly
+Keep control bit as you go down pipeline.
 
 
-Pipeline registers
-******************************
-The registers break the flow of signals
+IF | ID | EX | Mem | WB
 
-Need registers between stages
-    to hold info produced in previous cycle 
-
-Keep the register you need to write to until the end of the pipeline,
-then when you get to the end, it will write to the correct register
-without overwriting anything else.
+implements
+IF => instruciton memory
+ID => register file
+EX => ALU
+Mem => memory
+WB => data memory
 
