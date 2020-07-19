@@ -20,4 +20,15 @@ Where is the Stack in Memory?
     Static data segment 
         -initialzed before program starts running
         -$gp points to Static
-        
+    Heap
+        above static for data structures that grow and shrink
+        and grows
+
+Order of Memory Allocation (imagine)
+##############################
+Stack
+Dynamic data
+Static data
+text
+Reserved
+
