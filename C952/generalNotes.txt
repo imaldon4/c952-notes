@@ -10,7 +10,7 @@ Logical Operation (or) with immediate
 
 
 
-Control signals:
+Control signals: 0 or 1
     RegDst
     RegWr
     ExtOp
@@ -18,4 +18,3 @@ Control signals:
     ALUSrc
     MemtoReg
     MemWr
-    
