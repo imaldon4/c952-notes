@@ -15,3 +15,8 @@ EX => ALU
 Mem => memory
 WB => data memory
 
+
+Pipelining performance
+******************************
+T >= T_single_cycle / Number_of_stages
+
