@@ -1,2 +1,21 @@
 Pipelining
 ******************************
+
+Clock rate is CYCLES / SECONDS which is in Hz and is 1/period
+
+Pipelining 
+    - doesn't help latency of a single task
+    - throughput is improved 
+
+What is the biggest speedup you can do?
+    - depends on number of stages
+    - takes time for pipe to fill up
+
+Peak speed of 4 loads = factor of *4
+
+Pipeline rate limited by slowest pipeline stage
+
+Unbalanced pipeline 
+    - creates limits on the slowest pipeline
+    - breaking up assembly line evenly
+    
