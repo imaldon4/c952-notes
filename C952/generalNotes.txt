@@ -1,0 +1,6 @@
+Producing Machine Language
+******************************
+Simple case
+    - arithmetic, logical, shifts
+Branch
+    - PC-relative

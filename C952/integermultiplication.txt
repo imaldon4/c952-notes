@@ -1,0 +1,17 @@
+Integer Multiplication
+******************************
+32-bit x 32-bit = 64-bit value
+
+in C:
+a = b * c;
+
+mult    $s2, $s3
+mfhi    $s0
+mflo    $s1
+
+
+Integer Division
+******************************
+puts remainder of division in hi and quotient in lo
+
+
