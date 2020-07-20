@@ -1,1 +1,19 @@
 Anatomy of 16 byte cache
+
+
+Cache Replacement
+
+Block must be aligned in memory
+
+
+4 byte block to match word size
+
+Simpler ->
+    Ask 4 byte boundaries to be aligned in memory
+    - 00 always last two bits address
+        - compare 30 bits, so two fewer bits 
+    
+Anatomy of 32B cache, 8 byte block
+    - 3 bits of addresses always 000
+    - tags have even numbered words
+
