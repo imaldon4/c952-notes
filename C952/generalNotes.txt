@@ -1,47 +1,22 @@
-Anatomy of 16 byte cache
+Example is a directly mapped cache
 
 
-Cache Replacement
+Cache is meant to be
+    programmer invisible
 
-Block must be aligned in memory
+Line and block is used interchangeably
+    one entry in the cache
 
-
-4 byte block to match word size
-
-Simpler ->
-    Ask 4 byte boundaries to be aligned in memory
-    - 00 always last two bits address
-        - compare 30 bits, so two fewer bits 
-    
-Anatomy of 32B cache, 8 byte block
-    - 3 bits of addresses always 000
-    - tags have even numbered words
-
-Fully associative cache
-    - every tag is checked on ever access
-        - any location in memory could live in any memory in cache
-        - would need to search all locations
-
-Optimization: 2 sets 
-    => 1/2 comparators 
-
-    - top cache
-    - bottom cache
-
-1 Address bit selects which set
+four words = 16 bytes
+1 word = 4 bytes
 
 
-Address fields used by cache controller:
-1) Block Offset
-2) Set Index
-    which set of cache looking in right now
-3) Tag
-    actual tag bits need to compare
+Multiword-block direct-mapped cache
+    - spatial locality
+    - even if a miss, you still might use the words brought in 
 
-Direct mapped design
-    where only one tag to need to compare in a single set
+x86 is 64 bytes
+    64 bytes at a time are brought into the cache at a time!
 
-Valid bit 
-    - must check tag AND valid bit to see if address has actual info
-
-    
+Fully associative
+    Block can go anywhere
