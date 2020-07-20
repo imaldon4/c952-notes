@@ -41,3 +41,7 @@ Address fields used by cache controller:
 Direct mapped design
     where only one tag to need to compare in a single set
 
+Valid bit 
+    - must check tag AND valid bit to see if address has actual info
+
+    
