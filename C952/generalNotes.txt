@@ -11,3 +11,15 @@ Cache controller
             - which piece of block to return to processor
             - doesn't play a central role in Cache
         
+Cache terms:
+
+HIT RATE: fraction of accesses that hit in the cache
+    fration of instruction fetches
+    number hits / total number of accesses
+
+MISS RATE:  opposite
+    1 - hit RATE
+
+MISS PENALTY: time to replace block from level in memeory hierarchy to cache 
+
+HIT TIME: time to access cache mememory (including tag comparison)
