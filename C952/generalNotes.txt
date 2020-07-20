@@ -19,4 +19,21 @@ x86 is 64 bytes
     64 bytes at a time are brought into the cache at a time!
 
 Fully associative
-    Block can go anywhere
+    - block can go anywhere
+    - entire cache is searched
+    - needs separate comparator (every entry needs a comparator for parallel compare)
+
+Direct mapped   
+    - block goes in one place
+    - 1 comparator only
+    - numberr of sets = number of blocks
+
+N-way set associative
+    - some number of sets and within every set is FULLY associative
+    - a combination
+    - two way, one way
+        set index + several ways of accessing
+    
+IBM cache terminology
+    - calls ways sets and sets ways
+
