@@ -17,3 +17,14 @@ Anatomy of 32B cache, 8 byte block
     - 3 bits of addresses always 000
     - tags have even numbered words
 
+Fully associative cache
+    - every tag is checked on ever access
+        - any location in memory could live in any memory in cache
+        - would need to search all locations
+
+Optimization: 2 sets 
+    => 1/2 comparators 
+
+    - top cache
+    - bottom cache
+
