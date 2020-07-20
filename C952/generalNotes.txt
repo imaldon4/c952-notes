@@ -21,5 +21,16 @@ MISS RATE:  opposite
     1 - hit RATE
 
 MISS PENALTY: time to replace block from level in memeory hierarchy to cache 
+    measured in clock cycles (lots of them)
 
 HIT TIME: time to access cache mememory (including tag comparison)
+    (time in ns or ps to access)
+
+    
+Two caches can be accessed in parallel!
+    avoids structural hazards
+    two streams won't interfere with eachother
+
+abbreviation: $ = cash 
+
+
