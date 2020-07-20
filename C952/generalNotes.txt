@@ -28,3 +28,16 @@ Optimization: 2 sets
     - top cache
     - bottom cache
 
+1 Address bit selects which set
+
+
+Address fields used by cache controller:
+1) Block Offset
+2) Set Index
+    which set of cache looking in right now
+3) Tag
+    actual tag bits need to compare
+
+Direct mapped design
+    where only one tag to need to compare in a single set
+
