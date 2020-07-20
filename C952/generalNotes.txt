@@ -1,2 +1,38 @@
 With program hierarchy
-     want to make the disk seem faster
+    want to make the disk seem faster
+
+Will everything be copied in every memory?
+    Yes
+    - not a problem because the principle of locality
+    
+Handling Stores with    WRITE-THROUGH
+
+
+WRITE-THROUGH
+    Write buffer
+        stops CPU from stalling
+    Write buffer myay have multiple entries to absorb bursts of writes
+    What if store misses in chache?
+        Nothing
+    Basically write through the cache to main memory.
+
+    Write through policy:
+        - write buffer
+        - buffer updates memeory in parallel, so you don't have to wait
+
+
+
+Handling Stores with Write-Back cache
+    Not going to write immediately to memeory
+    Write Back Policy:
+        write only to cache and then write chache block back to memory when evict block from cache
+        - writes collected in cache, only single write to memeory per block. 
+
+    "Dirty" bit 
+        a second bit, that differentiates:
+            did I write to this line while in cache or was it clean?
+                clean = version in memory same
+        if clean, do Nothing
+        if dirty, then send to memory to update to newest version
+    
+    
