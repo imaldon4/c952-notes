@@ -37,3 +37,6 @@ AVX
     - space expansion to 1024-bit registers 
     multiple elements tied together into larger bit registers 
 
+XMM registers
+
+Used in "packed" SIMD 
