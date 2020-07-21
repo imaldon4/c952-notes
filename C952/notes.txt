@@ -1,13 +1,22 @@
-Primary cache parameters
+Other Cache parameters
 ******************************
-Block size (line size)
-    is the unit of transfer between cache and memory
+Write policy
+Replacement policy 
 
-Associativity
-    how many different places need to look in given set
-    Direct mapted => 1 way
-    Fully Associative => every way
-    set Associative => some sets and some ways
 
-Total cache capacity
-    Total # entries * block size 
+Write policy 
+******************************
+Cache hit:
+    - write through
+        need buffer
+    - write back
+        only tries to update cache 
+        less traffic (since updates only on way out)
+        bring in clean line into memory, then update piece then set to dirty
+
+Cache miss:
+    - no write allocate:
+        only write to main memory
+    - write allocate 
+        bring in whole line
+        fetch into cache 
