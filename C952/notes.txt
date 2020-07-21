@@ -1,25 +1,4 @@
-Parallel Programming Languages
-******************************
-Hard to find Languages that people actually like
-
-Survivor languages:
-    extension
-    add to existing languages
-
 OpenMP
-    and extension to C
 
-    1) compiler directives (inserted to source code)
-    2) runtime routines
-    3) env variables
+Markup parts you want to work in parallel
 
-    portable 
-    standardized
-    easy to compile: cc -fopenmp name.c
-
-Shared Memory Model with Explicit Thread-based Parallelism
-    multiple threads in shared memory 
-    
-    Pros:
-    
-    Cons:
