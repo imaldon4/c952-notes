@@ -1,11 +1,17 @@
-Sources of Cache Misses (3C's)
+CPU cache interation
 ******************************
-compulsory (cold start)
-capacity (cache not big enough)
-    Misses would never happen with infinite cache
-conflict/collision 
-    memory locations competing over same cache set
-    if{
-        ideal associativity cache wouldn't happen 
-    }
 
+Blocking cache 
+if (miss) {
+    the cache stalls
+    put a bubble in
+}
+
+
+Why need to stall everything in pipeline when data miss?
+    Instruction behind cannot be dependent 
+
+Freeze pipeline
+    enable signal (says: update on next clock cycle?)
+
+Access time only depends on how big tot
