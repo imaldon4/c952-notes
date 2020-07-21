@@ -1,9 +1,0 @@
-How beneficial is it anyways?
-
-One-way
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Doubled the cache, but did not halve the number of misses
-
-Why is associativity less helpful when having bigger caches?
-    it matters less as you have more and more places where it won't be a miss
-    
