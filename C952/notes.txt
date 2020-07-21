@@ -9,4 +9,10 @@ Biggest change is from Direct mapped to 2 way
 Miss rate as Associativity increases?
     - goes down
     - less chance of conflict
-    
+
+Trading off miss time and hit rate!
+
+
+Miss penalty as Associativity increases?
+    - unchanged
+    - replacement policy runs in parallel with fetching missing line from memory
