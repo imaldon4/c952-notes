@@ -1,41 +1,14 @@
-Using Parallelism for Performance
-******************************
-Two ways:
-    - multiprogramming 
-        run multiple programs in parallel
-        easy
-    - parallel computing
-        run one program faster
-        hard
-
-
-
-
-Flynn Taxonomy
-******************************
-
-
-
-
-
-Single-Instruction / Single-Data Stream (SISD)
-******************************
-One instruction working at one data operand at a time
-
-Single instruciton working at multiple data items at a time
-
-One instruction doing multiple data units of work
-
-SIMD
-    instruction pool working on multiple same instrucitons
+SIMD 
+    used everywhere
+    within processors
 
 MIMD
-multiple instruction / multiple data streams
-    single chip, multiple processors working together
+    across processors
 
+SPMD = Single program multiple data
+    multiple cores, each core takes a subset, then combine results
 
-MISD
-multiple instrucation / single data stream 
-    one data item, and do two instructions on same data item
-    not useful
+SIMD (lower level) 
+    to do more work on higher level data that is broken down
+    - scientific computing
 
