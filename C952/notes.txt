@@ -1,0 +1,13 @@
+Primary cache parameters
+******************************
+Block size (line size)
+    is the unit of transfer between cache and memory
+
+Associativity
+    how many different places need to look in given set
+    Direct mapted => 1 way
+    Fully Associative => every way
+    set Associative => some sets and some ways
+
+Total cache capacity
+    Total # entries * block size 
