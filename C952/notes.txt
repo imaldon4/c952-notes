@@ -29,4 +29,4 @@ Load balancing:
     - spread work out
     - EVERY PROCESSOR DOING SAME AMOUNT OF WORK
     
-l
+If you have more stuff to do, bigger chunks can be made. 
