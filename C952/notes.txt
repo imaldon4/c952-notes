@@ -1,18 +1,13 @@
-Increasing Associativity?
+Increasing # of Entries?
 ******************************
 
-Hit time as Associativity Increasing?
-    - increases
+Hit time as #entries increases?
+    - takes longer to access
 
-Biggest change is from Direct mapped to 2 way
-
-Miss rate as Associativity increases?
-    - goes down
-    - less chance of conflict
-
-Trading off miss time and hit rate!
+Miss rate as #entries increases?
+    - decreases, capacity misses goes down
 
 
-Miss penalty as Associativity increases?
+Miss penalty as #entries increases?
     - unchanged
-    - replacement policy runs in parallel with fetching missing line from memory
+    - 
