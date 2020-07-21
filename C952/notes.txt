@@ -1,22 +1,22 @@
-Other Cache parameters
+Replacement Policy
 ******************************
-Write policy
-Replacement policy 
+Why does associative cache need a replacement policy?
 
+Direct mapped only has one place, no choice to be made. 
+Only need replacement policy when ther eare multiple ways.
 
-Write policy 
-******************************
-Cache hit:
-    - write through
-        need buffer
-    - write back
-        only tries to update cache 
-        less traffic (since updates only on way out)
-        bring in clean line into memory, then update piece then set to dirty
+Random 
 
-Cache miss:
-    - no write allocate:
-        only write to main memory
-    - write allocate 
-        bring in whole line
-        fetch into cache 
+LRU 
+    exploit temporal locality
+
+FIFO / Round-robin
+    - highly associative caches 
+    - picking the wrong one will only result a few more misses
+
+NMRU
+    - not the one just touched, pick one after that
+
+Second-order effect
+    - assuming that most of the time you will get a hit
+
