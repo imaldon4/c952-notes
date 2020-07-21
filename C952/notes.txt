@@ -8,3 +8,34 @@ Two ways:
         run one program faster
         hard
 
+
+
+
+Flynn Taxonomy
+******************************
+
+
+
+
+
+Single-Instruction / Single-Data Stream (SISD)
+******************************
+One instruction working at one data operand at a time
+
+Single instruciton working at multiple data items at a time
+
+One instruction doing multiple data units of work
+
+SIMD
+    instruction pool working on multiple same instrucitons
+
+MIMD
+multiple instruction / multiple data streams
+    single chip, multiple processors working together
+
+
+MISD
+multiple instrucation / single data stream 
+    one data item, and do two instructions on same data item
+    not useful
+
