@@ -1,21 +1,9 @@
-4 way associative caches
+How beneficial is it anyways?
 
-Trade off:
-    Fixed size (doubling by factor 2)
-        - you halve number of sets
-            - set index gets smaller by one bit
-        
-Cost of Set-associative caches
-    - mux delay
-        Don't know which piece of data until tag compare
+One-way
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Doubled the cache, but did not halve the number of misses
 
-Cache replacement Policies
-    Kicking out the old one
-        - random replacement
-            - if you guess wrong it will come back in to the cache anyway
-            - will avoid any pathological case for patterns or loops
-            - performance programmers hate this because hard to figure out issues
+Why is associativity less helpful when having bigger caches?
+    it matters less as you have more and more places where it won't be a miss
     
-LRU (Least Recently Used)
-    Find something not most recently used and kick out
-    Use a pointer sometimes
