@@ -1,14 +1,12 @@
-Increasing Block size?
+Increasing Associativity?
+******************************
 
-Hit time = unchanged
+Hit time as Associativity Increasing?
+    - increases
 
-Miss rate as Block size increases?
-    miss rate goes down
+Biggest change is from Direct mapped to 2 way
 
-Miss penalty as block size increases?
-    go up 
-
-
-You want block size to be long enough to amortize misses
-
-
+Miss rate as Associativity increases?
+    - goes down
+    - less chance of conflict
+    
