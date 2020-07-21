@@ -1,4 +1,19 @@
-Memory Hierarchy: review
+Local vs Global miss rates
 
-processor -> levels -> main memory 
+local miss rate 
+    how many of level 1 caches miss in level 2?
+
+Global miss rate
+    of all the requests made by processor, how many of those 
+    ultimately miss in level 2?
+    - tells more about the performance of the system
+
+L2 local miss rate will always be greater than L2 global miss rate
+
+
+
+******************************
+We know they're global miss rate in illustration:
+
+
 
