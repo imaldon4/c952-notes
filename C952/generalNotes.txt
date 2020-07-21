@@ -1,10 +1,2 @@
-Cache Design
-******************************
+If you take budget
 
-Alternative Block Placement Schemes:
-
-- Direct Mapped
-    
-- Set Associative
-
-- Fully Associative
