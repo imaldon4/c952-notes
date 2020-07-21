@@ -1,42 +1,26 @@
-SIMD Architectures
-******************************
-Data level parallel machines
-
-Data Parallelism:
-    executing same operation on multiple data streams
-
-Improves:
-    multiplications are independent
-    
-    pipelining / concurrency in memory access as well
+Data-level Parallelism and SIMD
 
 
+Use loops:
 
-Vector instructions:
-    working on multiple instructions at the same time
+for (i = 1000; i > 0; i = i - 1){
+    x[i] = x[i] + 1;
+}
 
-Programmer's job to make vectors
-    avoids stalls exe
+Unroll loop:
+    do more than one within a loop 
+
+Note that they use a larger offset
+
+Compliers will automatically perform:
+    loop unrolling
 
 
-Intel SIMD extensions
-******************************
-Adding mmx instructions to architecture 
-    MMX = multi media extensions
-        watch videos
-Took floating point registers (64 bit)
-    consider to be broken up into two 32-bit, or 4 16-bit, etc.
+for (i = 1000; i > 0; i = i - 4){
+    x[i]    = x[i] +s;
+    x[i - 1] = x[i - 1] + s;
+    x[i - 2] = x[i - 2] + s;
+}
 
-SSE 
-    streaming SIMD extensions 
-    128-bit registers 
-
-AVX 
-    advanced vector extensions 
-    256-bit registers 
-    - space expansion to 1024-bit registers 
-    multiple elements tied together into larger bit registers 
-
-XMM registers
-
-Used in "packed" SIMD 
+Not a good idead to do it that way
+Leave it to the compiler 
