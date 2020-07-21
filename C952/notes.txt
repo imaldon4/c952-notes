@@ -1,13 +1,9 @@
-Increasing # of Entries?
+How to reduce miss penalty?
 ******************************
+We had tricks to reduce hit rate, miss time etc.
 
-Hit time as #entries increases?
-    - takes longer to access
+Use the idea of caching recursively
+    cache from cache to memory!
 
-Miss rate as #entries increases?
-    - decreases, capacity misses goes down
+L1 and L2 caches
 
-
-Miss penalty as #entries increases?
-    - unchanged
-    - 
