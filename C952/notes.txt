@@ -1,22 +1,11 @@
-Replacement Policy
+Sources of Cache Misses (3C's)
 ******************************
-Why does associative cache need a replacement policy?
-
-Direct mapped only has one place, no choice to be made. 
-Only need replacement policy when ther eare multiple ways.
-
-Random 
-
-LRU 
-    exploit temporal locality
-
-FIFO / Round-robin
-    - highly associative caches 
-    - picking the wrong one will only result a few more misses
-
-NMRU
-    - not the one just touched, pick one after that
-
-Second-order effect
-    - assuming that most of the time you will get a hit
+compulsory (cold start)
+capacity (cache not big enough)
+    Misses would never happen with infinite cache
+conflict/collision 
+    memory locations competing over same cache set
+    if{
+        ideal associativity cache wouldn't happen 
+    }
 
