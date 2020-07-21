@@ -5,6 +5,27 @@ it's hard to get good speed in parallelism
 portions not sped up in code become BOTTLENECKS
 
 
+People weren't motivated to write parallel programs
+It's just diluted, so might as well wait for processors to get faster.
+Changed nowadays.
 
 Scaling:
 ******************************
+Allow program to grow to fill up size of machine
+
+Strong scaling:
+    I can get a speed up even if I don't change the problem size 
+
+Weak scaling:
+    Grow my problem, hopefully dilute portion not parallel to get better speedup
+
+Nowadayws BIG DATA so parallelism is more useful.
+
+
+Load balancing:
+    how of my program can I parallel?
+    - weakest link
+    - always waiting for one of the slower processors to finsih work
+    - spread work out
+    - EVERY PROCESSOR DOING SAME AMOUNT OF WORK
+    
