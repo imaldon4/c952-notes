@@ -1,4 +1,22 @@
-Why does it plateu in certain areas?
+Improving Cache performance
 ******************************
-Array - important data structures in program
-As soon as a data structure fits in caches
+
+Reduce time to hit the Cache      
+    smaller Cache
+
+Reduce miss rate
+    bigger cache 
+
+Reduce miss penalty
+    use multiple cache levels
+
+
+Impact of Larger cache on AMAT
+1) Reduce misses 
+    capacity misses
+    conflict misses
+2) longer access time   
+    hit time goes up
+    two clock cycles in stead of one (possibly)
+    clock cycle time might get longer (frequency changes)
+
