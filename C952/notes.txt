@@ -1,40 +1,25 @@
-Parallel Threads
+Parallel Programming Languages
 ******************************
-Somehow divide the work of one job
+Hard to find Languages that people actually like
 
-Parallelism Only Path to Higher Performance
-******************************
+Survivor languages:
+    extension
+    add to existing languages
 
+OpenMP
+    and extension to C
 
-Thread:
-    a sequential flow of instructions that performs some task
-    associated:
-        program counter
-        runs tasks
+    1) compiler directives (inserted to source code)
+    2) runtime routines
+    3) env variables
 
-Software will multiplex the hardware thread 
+    portable 
+    standardized
+    easy to compile: cc -fopenmp name.c
 
-OS - move software thread to hardware thread, then switch off
-
-Hardware thread - does work 
-Software thread - moves code around (multiplexing)
-
-OS Threads
-******************************
-timer 
-
-
-Hardware Multithreading
-******************************
-Processor = expensive, should no be left idle
-Long memory latency to memory on cache miss
-
-Second set of registers and second PC 
-    switch over while other processor is in stall 
-
-The amount of resources is actually small to add hardware Multithreading
-
-
-core:
-    has own PC counters 
-    own fetch instruction
+Shared Memory Model with Explicit Thread-based Parallelism
+    multiple threads in shared memory 
+    
+    Pros:
+    
+    Cons:
