@@ -1,9 +1,10 @@
-Average Memory Access Time (AMAT)
-    avg to access memory consider both hits and misses in cache
+Cache Design
+******************************
 
-AMAT = Time for a hit + Miss rate x Miss penalty
-    - miss penalty is always added on top of hit time!
+Alternative Block Placement Schemes:
 
-The bandwidth of main memory cannot keep up with cache speed.
+- Direct Mapped
+    
+- Set Associative
 
-
+- Fully Associative
