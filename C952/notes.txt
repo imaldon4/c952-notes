@@ -1,0 +1,10 @@
+Using Parallelism for Performance
+******************************
+Two ways:
+    - multiprogramming 
+        run multiple programs in parallel
+        easy
+    - parallel computing
+        run one program faster
+        hard
+
