@@ -1,32 +1,39 @@
-Big Idea: Amdahl's (heartbreaking) law:
-
-it's hard to get good speed in parallelism
-
-portions not sped up in code become BOTTLENECKS
-
-
-People weren't motivated to write parallel programs
-It's just diluted, so might as well wait for processors to get faster.
-Changed nowadays.
-
-Scaling:
+SIMD Architectures
 ******************************
-Allow program to grow to fill up size of machine
+Data level parallel machines
 
-Strong scaling:
-    I can get a speed up even if I don't change the problem size 
+Data Parallelism:
+    executing same operation on multiple data streams
 
-Weak scaling:
-    Grow my problem, hopefully dilute portion not parallel to get better speedup
-
-Nowadayws BIG DATA so parallelism is more useful.
-
-
-Load balancing:
-    how of my program can I parallel?
-    - weakest link
-    - always waiting for one of the slower processors to finsih work
-    - spread work out
-    - EVERY PROCESSOR DOING SAME AMOUNT OF WORK
+Improves:
+    multiplications are independent
     
-If you have more stuff to do, bigger chunks can be made. 
+    pipelining / concurrency in memory access as well
+
+
+
+Vector instructions:
+    working on multiple instructions at the same time
+
+Programmer's job to make vectors
+    avoids stalls exe
+
+
+Intel SIMD extensions
+******************************
+Adding mmx instructions to architecture 
+    MMX = multi media extensions
+        watch videos
+Took floating point registers (64 bit)
+    consider to be broken up into two 32-bit, or 4 16-bit, etc.
+
+SSE 
+    streaming SIMD extensions 
+    128-bit registers 
+
+AVX 
+    advanced vector extensions 
+    256-bit registers 
+    - space expansion to 1024-bit registers 
+    multiple elements tied together into larger bit registers 
+
