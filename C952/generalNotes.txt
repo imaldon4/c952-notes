@@ -1,36 +1,9 @@
-Caches Part 2
-******************************
-Cache controller
-    looks at 32 bits that come in and splits up the address
-    3 fields
-        tag
-            - remaining portion of processor address to use to find in cache
-        index
-            - seletcts set
-        offset
-            - which piece of block to return to processor
-            - doesn't play a central role in Cache
-        
-Cache terms:
+Average Memory Access Time (AMAT)
+    avg to access memory consider both hits and misses in cache
 
-HIT RATE: fraction of accesses that hit in the cache
-    fration of instruction fetches
-    number hits / total number of accesses
+AMAT = Time for a hit + Miss rate x Miss penalty
+    - miss penalty is always added on top of hit time!
 
-MISS RATE:  opposite
-    1 - hit RATE
-
-MISS PENALTY: time to replace block from level in memeory hierarchy to cache 
-    measured in clock cycles (lots of them)
-
-HIT TIME: time to access cache mememory (including tag comparison)
-    (time in ns or ps to access)
-
-    
-Two caches can be accessed in parallel!
-    avoids structural hazards
-    two streams won't interfere with eachother
-
-abbreviation: $ = cash 
+The bandwidth of main memory cannot keep up with cache speed.
 
 
