@@ -1,9 +1,4 @@
-How to reduce miss penalty?
-******************************
-We had tricks to reduce hit rate, miss time etc.
+Memory Hierarchy: review
 
-Use the idea of caching recursively
-    cache from cache to memory!
-
-L1 and L2 caches
+processor -> levels -> main memory 
 
