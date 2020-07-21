@@ -1,26 +1,40 @@
-Data-level Parallelism and SIMD
+Parallel Threads
+******************************
+Somehow divide the work of one job
+
+Parallelism Only Path to Higher Performance
+******************************
 
 
-Use loops:
+Thread:
+    a sequential flow of instructions that performs some task
+    associated:
+        program counter
+        runs tasks
 
-for (i = 1000; i > 0; i = i - 1){
-    x[i] = x[i] + 1;
-}
+Software will multiplex the hardware thread 
 
-Unroll loop:
-    do more than one within a loop 
+OS - move software thread to hardware thread, then switch off
 
-Note that they use a larger offset
+Hardware thread - does work 
+Software thread - moves code around (multiplexing)
 
-Compliers will automatically perform:
-    loop unrolling
+OS Threads
+******************************
+timer 
 
 
-for (i = 1000; i > 0; i = i - 4){
-    x[i]    = x[i] +s;
-    x[i - 1] = x[i - 1] + s;
-    x[i - 2] = x[i - 2] + s;
-}
+Hardware Multithreading
+******************************
+Processor = expensive, should no be left idle
+Long memory latency to memory on cache miss
 
-Not a good idead to do it that way
-Leave it to the compiler 
+Second set of registers and second PC 
+    switch over while other processor is in stall 
+
+The amount of resources is actually small to add hardware Multithreading
+
+
+core:
+    has own PC counters 
+    own fetch instruction
