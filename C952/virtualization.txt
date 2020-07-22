@@ -31,5 +31,13 @@ Terminology:
 
 Precise Traps 
     stopping cleanly on ONE instruction
+    looks like a clean break
 
-    
+    EPC (exception PC) - the trap handler points to
+
+    save all state registers and error PC, then continue
+
+    interupt handler doesn't need to understand underlying pipeline
+
+    precise traps are tricking in pipelined superscalar out-of-order processor!
+
