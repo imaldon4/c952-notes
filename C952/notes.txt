@@ -2,3 +2,4 @@ OpenMP
 
 Markup parts you want to work in parallel
 
+use private(x) make sure that variables are not shared
