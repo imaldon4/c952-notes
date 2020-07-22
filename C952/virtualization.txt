@@ -8,3 +8,28 @@ Trap handling:
     - some event happens (interrupt, exception)
     - jump to other piece of code
     - PC gets changed
+
+    external or internal event
+
+
+Terminology:
+    Interrupt - something outside of current program
+        asynchronously
+        seeking processes' attention
+        key on keyboard, mouse activity
+        I/O device
+        Unrelated to program currently running
+
+    exception - something to do with an instuction in program
+        synchronously
+        page fault
+        related to code you are running
+        illegal instruction
+
+    trap - action of servicing that event (an interrupt or exception)
+        trap handler will deal with the event
+
+Precise Traps 
+    stopping cleanly on ONE instruction
+
+    
