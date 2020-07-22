@@ -1,43 +1,39 @@
-Traps / Interrupts / Execeptions
-- altering the normal flow control
+Trap handling in 5-stage pipeline
+******************************
+Interrupts
 
-Load from virtual memory address:
-    many steps before redoing load instruction
-    
-Trap handling:
-    - some event happens (interrupt, exception)
-    - jump to other piece of code
-    - PC gets changed
+Exceptions
+    PC address Exceptions
+    Illegal opcode Exceptions
+    Overflow Exceptions
+    Data address Exceptions
 
-    external or internal event
+--> Asynchronous interrupts 
+
+What happens with multiple simultaneous exceptions 
+in different pipeline stages?
+
+Service which first?
+
+    DATA ADDRESS EXCEPTION 
+
+Data address exceptions is the latest exception in pipeline
+
+Do the oldest instructions first 
+    That exception is the first place that goes wrong and 
+    everything else is a consequence of it.
 
 
-Terminology:
-    Interrupt - something outside of current program
-        asynchronously
-        seeking processes' attention
-        key on keyboard, mouse activity
-        I/O device
-        Unrelated to program currently running
+Want to report exceptions in same as if done in program order.
 
-    exception - something to do with an instuction in program
-        synchronously
-        page fault
-        related to code you are running
-        illegal instruction
+Commit Point
+******************************
+Save exceptions until Commit
 
-    trap - action of servicing that event (an interrupt or exception)
-        trap handler will deal with the event
+first {
+    Flush pipeline of all things behind commit point 
+} then {
+    change PC to EPC 
+}
 
-Precise Traps 
-    stopping cleanly on ONE instruction
-    looks like a clean break
-
-    EPC (exception PC) - the trap handler points to
-
-    save all state registers and error PC, then continue
-
-    interupt handler doesn't need to understand underlying pipeline
-
-    precise traps are tricking in pipelined superscalar out-of-order processor!
 
