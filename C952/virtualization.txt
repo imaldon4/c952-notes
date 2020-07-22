@@ -1,0 +1,10 @@
+Traps / Interrupts / Execeptions
+- altering the normal flow control
+
+Load from virtual memory address:
+    many steps before redoing load instruction
+    
+Trap handling:
+    - some event happens (interrupt, exception)
+    - jump to other piece of code
+    - PC gets changed
