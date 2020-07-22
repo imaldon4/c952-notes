@@ -1,39 +1,4 @@
-Trap handling in 5-stage pipeline
+Virtual Memory
 ******************************
-Interrupts
-
-Exceptions
-    PC address Exceptions
-    Illegal opcode Exceptions
-    Overflow Exceptions
-    Data address Exceptions
-
---> Asynchronous interrupts 
-
-What happens with multiple simultaneous exceptions 
-in different pipeline stages?
-
-Service which first?
-
-    DATA ADDRESS EXCEPTION 
-
-Data address exceptions is the latest exception in pipeline
-
-Do the oldest instructions first 
-    That exception is the first place that goes wrong and 
-    everything else is a consequence of it.
-
-
-Want to report exceptions in same as if done in program order.
-
-Commit Point
-******************************
-Save exceptions until Commit
-
-first {
-    Flush pipeline of all things behind commit point 
-} then {
-    change PC to EPC 
-}
-
+In bare machine, only address was PHYSICAL 
 
